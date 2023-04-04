@@ -11,6 +11,7 @@ import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Root from './components/Root/Root';
 import DetailsCard from './components/DetailsCard/DetailsCard';
+import MealDB from './components/MealDB/MealDB';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,12 @@ const router = createBrowserRouter([
         path:"/card/:cardId",
         element:<DetailsCard></DetailsCard>,
         loader :({params}) =>fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.cardId}`)
+      },
+      {
+        path:"/mealdb",
+        element:<MealDB></MealDB>
       }
+
     ]
     
   },

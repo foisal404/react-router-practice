@@ -11,6 +11,7 @@ const Header = () => {
             <div className='flex p-5  gap-5'>
                 <AppLink  className="p-2 mx-2" to="/">Home</AppLink>
                 <AppLink className="p-2 mx-2" to="/resrturent">Resturent</AppLink>
+                <AppLink className="p-2 mx-2" to="/mealdb" >MealDB</AppLink>
             </div>
         </nav>
     );
